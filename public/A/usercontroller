@@ -1,0 +1,109 @@
+// var jwt=require('jsonwebtoken');
+// const secret="sdsfzfdgxfhgjijok3456768990";
+// exports.login=function(req,res){
+//     var usermod=require('../model/user');
+//     var db=new usermod();
+//     var response={};
+   
+//     var mail=req.body.email;
+//     var pass=require('crypto')
+//            .createHash('sha1')
+//            .update(req.body.password)
+//            .digest('base64');
+//      usermod.find({ 'email': mail , password: pass},function(err,result){
+
+
+//         if(err){
+//             response={
+//                 "Success":false,
+//                 "message":"Data not found in database"
+                
+//             };
+
+//             return res.status(400).send(err);
+
+
+//         }else{
+//             if(result.length>0){
+
+//                 var token=jwt.sign({email:mail,password:pass},secret,{
+//                 expiresIn:60*60*2   // expires in 2 hrs
+//                 });
+                
+//                  response={
+//                     "Success":true,
+//                     "message": "Login Sucessfully",
+//                     "token":token
+
+//                 };
+//                 return res.status(200).send (response);
+//             }
+//             else{
+//                  response={
+//                     "Success": false,
+//                     "message": "Invalid username/ password"
+//                 };
+//                 return res.status (400).send(response);
+//             }
+//         }
+//      })             
+                     
+// }
+
+// exports.registration=function(req,res)
+// {
+//     db.fname=req.body.fname;
+//     db.lname=req.body.lname;
+//     db.email=req.body.email;
+//     db.phone=req.body.phone;
+    
+//     db.password=require('crypto')
+//     .createHash('sha1')
+//     .update(req.body.password)
+//     .digest('base64');
+   
+//     var email=req.body.email;
+//     usermod.find({
+//         "email": email
+//     }, function (err, data) {
+
+//         if (err) {
+//             response = {
+//                 "Success": false,
+//                 "message": "Error fetching data"
+//             };
+//             return res.status(404).send(response);
+//         } else {
+//             if (data.length > 0) {
+
+//                 var response = {
+//                     "Success": false,
+//                     "message": "Credentials already Exist!!",
+//                 };
+//                 return res.status(404).send(response);
+//             } else {
+//                 db.save(function (err) {
+//                     // save() will run insert() command of MongoDB.
+//                     // it will add new data in collection.
+//                     if (err) {
+//                         response = {
+//                             "Success": false,
+//                             "message": "Error adding data",
+//                             "err": err
+//                         };
+//                     } else {
+//                         response = {
+//                             "Success": true,
+//                             "message": "Successfully Registed"
+//                         };
+//                     }
+//                     return res.status(200).send(response);
+//                 });
+//             }
+//         }
+//     })
+  
+                
+
+    
+// }

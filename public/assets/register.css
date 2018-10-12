@@ -1,0 +1,33 @@
+body {
+        
+        background: linear-gradient( rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.37) ), url('../images/ada.jpg');
+        background-position: absolute;
+        background-repeat: no-repeat;
+       
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        color: #222;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        text-transform: capitalize
+      }
+
+.table1{
+    background-color: rgba(94, 150, 206, 0.733);
+    position: absolute;
+    font-weight: 300;
+   }
+
+.h1 {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+.container1 {
+    position: fixed;
+    right:5;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: rgba(245, 239, 239, 0.459);
+}

@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title> chatapp home page</title>
+    <link rel="stylesheet" href="/home/gourav/gourav/CHATAPP/public/assets/home.css">
+</head> -->
+
+<!-- <body> -->
+
+<div id="container">
+    <div id="header">
+        <div id="logo"><img src="../images/chatapp.png" width="150px" height="95px"></div>
+        <h2 class="h2" align="center">(Sent-Recieve-Seen-Read) are ruling the World...
+             <span id="userlogin">logged In : {{currUser}}</span></h2>
+        <div id="logout"> <a href="#!/login" ng-click="logout()">
+            <button type="button">  logout</button></a> </div>
+    </div>
+    <div id=Area>
+        <div id="leftarea">
+            <div id="userhead">
+
+                    <center><b>CONTACTS</b></center><br>
+            </div>
+            <div id="user">
+               
+                <ul type="square">
+                    <li ng-repeat="data in userList">
+                        <a sref ng-click="person(data.Fullname,data.ID)">{{data.Fullname}}</a><hr>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div id="rightarea">
+            <div id="messagebox" >
+                <div >
+                    <div ng-repeat = "item in msgList">
+                      <p  id="leftmessgContainer" ng-if = "currUser != item.username">{{item.username}} : 
+                        <span id="messgText">{{item.message}}</span><br><br>
+                        <span id="left-time">{{item.time | date: 'medium'}}</span></p>
+                          <p id="rightMessgContainer" ng-if = "currUser == item.username">{{item.username}} : 
+                            <span id="messgText">{{item.message}}</span><br><br>
+                            <span id="right-time">{{item.time | date: 'medium'}}</span></p></div>
+                </div>
+          </div>
+            <div id="sendbox">
+                <div id="textarea">
+                    <textarea id="typing" rows="6" cols="80" placeholder="Enter your message" ng-model="message"> </textarea>
+                </div>
+                <div id="sendbtn"><button id= "btn" type="button" ng-click="add()" >send!</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- </body> -->
+
+<!-- </html> -->

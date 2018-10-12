@@ -1,0 +1,68 @@
+<center>
+    <p><img src="../images/chatapp.png" width="200px" height="150px"></p>
+    <h1 align=center> REGISTRATION FORM </h1>
+
+
+</center>
+<div>
+    <form style="max-width:500px ; margin:auto">
+
+        <table align="center" class="container1" class="table1" >
+
+            <tr>
+                <td colspan="3"><b>First Name</b> </td>
+                <label>
+                    <td ><b>:</b><input class="input-field" type="text" placeholder="FIRST NAME" ng-model="user.fname" name="fname"
+                            required> </td>
+                </label>
+            </tr>
+            <tr>
+
+                <td colspan="3"><b>Last Name</b> </td>
+                <label>
+                    <td><b>:</b><input class="input-field" type="text" placeholder="LAST NAME" ng-model="user.lname" name="lname"
+                            required></td>
+                </label>
+            </tr>
+            <tr>
+
+                <td colspan="3"><b>Email </b> </td>
+                <label>
+                    <td><b>:</b><input class="input-field" type="text" placeholder="Email" ng-model="user.email" name="email"
+                            required></td>
+                </label>
+            </tr>
+
+            <tr>
+                <td colspan="3"><b>Password  </td>
+                <label>
+                    <td><b>:</b><input class="input-field" type="password" placeholder="password" ng-model="user.password" name="password"
+                            required></td>
+                </label>
+            </tr>
+
+            <tr>
+                <td colspan="3"><b>Phone No</b> </td>
+                <label>
+                    <td><b>:</b><input class="input-field" type="number" ng-model="user.phone" placeholder="phone" name="phone"
+                            required> </td>
+                </label>
+            </tr>
+            
+                
+            <tr >
+                <td  > <button type="submit" class="btn" ng-click="register()">Register</button></td>
+                 <td><button type="reset" class="btn">Reset</button></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p align="right">Already have an Account? <a href="#!/login">Sign in</a></p>
+                </td>
+            </tr>
+            
+
+        </table>
+        <h5>{{message}}</h5>
+
+    </form>
+</div>

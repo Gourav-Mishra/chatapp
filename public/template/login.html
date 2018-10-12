@@ -1,0 +1,33 @@
+
+
+
+   
+   <div>
+    <center>
+        <h1> CHAT APP</h1>
+        <h4 align=center > WELCOME TO THE LOGIN PAGE</h4>
+        <form  style="max-width:500px;margin:auto" class="container">
+
+            <table  width="400" height="200" >
+                <tr >
+                    <td colspan="2" ><B>USER NAME:</B><input class="input-field" type="email" placeholder="Email"  ng-model="user.email" name="email"> </td>
+                   
+                </tr>
+                <tr>
+                    <td colspan="2"><B>PASSWORD :</B><input class="input-field" type="password" placeholder="password" ng-model="user.password" name="password"> </td>
+                </tr>
+                <tr>
+                    <td> <button type="submit" class="btn" ng-click="login()">LOGIN</button></td>
+                    <td> <button type="reset" class="btn">Reset</button></td>
+                </tr>
+                <tr>
+                        <td colspan="2"> <p align="right">Still not Registered..? <a href="#!/register">Register</a></p></td>
+                    </tr>
+                    
+               
+            </table>
+            <h5>{{message}}</h5>
+        </form>
+        
+    </center> 
+</div> 

@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #DDD;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#login-box {
+ 
+  width: 90%;
+  height: 90%;
+  background: rgba(209, 20, 20, 0.466);
+  clear: both;
+  
+}
+
+.left {
+  position: absolute;
+ background: rgb(61, 126, 175);
+ 
+  box-sizing: border-box;
+  padding: 40px;
+  width: 30%;
+  height: 100%;
+}
+
+
+
+
+
+.right1 {
+  position: absolute;
+  background: rgb(201, 41, 41);
+  box-sizing: border-box;
+  width: 70%;
+  height: 80%; 
+}
+.right2 {
+  
+  background:green;
+  
+  
+
+}
+
+
+
+
+
